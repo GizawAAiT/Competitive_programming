@@ -6,14 +6,7 @@ class Solution(object):
         """
         print len(s)
         
-        # ch=[]
-        # if s[0]=="(":
-        #     i=0
-        #     beg=""
-        #     while s[i]!="(":
-        #         beg +=s[i]
-        #     ch.append(beg)
-        # else:
+       
         st=[]
         i=0
         while i<len(s):
