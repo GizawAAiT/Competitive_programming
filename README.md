@@ -24,7 +24,7 @@ Other Feature: Find the tutors list and read the information about them.
 
 Group Members
 
-###### Name                        ID
+###### Name        and                ID
 
 1. Kaleab Tekalign -> UGR/3664/12 -> section 2
 2. Gizaw Dagne -> UGR/6640/12 -> section 2
