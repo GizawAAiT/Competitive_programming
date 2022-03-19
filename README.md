@@ -26,8 +26,8 @@ Group Members
 
 ###### Name                        ID
 
-Kaleab Tekalign -> UGR/3664/12 -> section 2
-Gizaw Dagne -> UGR/6640/12 -> section 2
-Metsnanat Asfaw -> UGR/7631/12 -> section 1
-Melat Mesele -> UGR/9429/12 -> section 1
-Hayat Tofik -> UGR/2987/12 -> section 2
+1. Kaleab Tekalign -> UGR/3664/12 -> section 2
+2. Gizaw Dagne -> UGR/6640/12 -> section 2
+3. Metsnanat Asfaw -> UGR/7631/12 -> section 1
+4. Melat Mesele -> UGR/9429/12 -> section 1
+5. Hayat Tofik -> UGR/2987/12 -> section 2
