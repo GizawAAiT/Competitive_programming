@@ -18,8 +18,8 @@ The user with the parent role, which we refer to as the person seeking the tutor
 
 ### Main Business features:
 
-Creating a study group chat room where they can delete members and change the name of the group.
-Share book with description on the uses in which they can delete the book, and update the description (required to provide description).
+* Creating a study group chat room where they can delete members and change the name of the group.
+* Share book with description on the uses in which they can delete the book, and update the description (required to provide description).
 Other Feature: Find the tutors list and read the information about them.
 
 Group Members
