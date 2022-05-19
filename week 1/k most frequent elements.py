@@ -45,7 +45,6 @@ class Solution(object):
         an=[]
         for i in a:
             an.extend(i)
-        print bl
         return an
     
             
