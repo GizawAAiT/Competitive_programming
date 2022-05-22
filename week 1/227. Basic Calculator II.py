@@ -7,7 +7,6 @@ class Solution(object):
         no=set(str(x) for x in range (10))
         operations=["*","-","/","+"]
         a="3333"
-        print type(a)
         op=[]
         nums=[]
         i=0
