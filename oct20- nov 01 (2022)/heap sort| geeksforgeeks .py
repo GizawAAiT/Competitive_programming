@@ -7,7 +7,7 @@ class Solution:
             mx = r
         if (l < n and arr[l] > arr[mx] ):
             mx = l
-        
+                                                                            
         if (i != mx):
             arr[mx], arr[i] = arr[i], arr[mx]
             self.heapify(arr, n, mx)
