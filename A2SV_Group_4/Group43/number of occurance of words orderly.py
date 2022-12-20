@@ -3,16 +3,13 @@ n = int(input())
 words = []
 for i in range(n):
     words.append(input())
-
-dic, s, order = {}, set(), []
+dic, order = {}, []
 for w in words:
-    if w in dic:
-        dic[w]+=1
-    else: dic[w]=1
-    if w not in s:
-        s.add(w)
-        order.append(w)
-print(len(order))
+    if w in dic: dic[w]+=1
+    else:
+        order.append(w) 
+        dic[w]=1
+print(len(order)) 
 for w in order:
     print(dic[w], end=' ')
 
