@@ -11,5 +11,6 @@ for w in words:
         dic[w]=1
 print(len(order)) 
 for w in order:
-    print(dic[w], end=' ')
+    print(dic[w], end=' ') 
+    
 
