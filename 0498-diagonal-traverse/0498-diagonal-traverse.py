@@ -10,7 +10,6 @@ class Solution:
             if j<len(mat): j+=1
             if len(mat[i])==0: i+=1
                 
-            # print((iteration,temp))
             res.extend(temp) if iteration%2==1 else res.extend(list(reversed(temp)))
             iteration +=1
         return res
