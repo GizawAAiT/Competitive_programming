@@ -3,9 +3,10 @@ class Solution:
         pos = neg = 0
         arranged = []
         
-        for i in range(len(nums)):
-            while pos<len(nums) and nums[pos]<0: pos+=1
-            while neg<len(nums) and nums[neg]>0: neg+=1
+        N = len(nums)
+        for i in range(N):
+            while pos<N and nums[pos]<0: pos+=1
+            while neg<N and nums[neg]>0: neg+=1
             
             if i%2:  
                 arranged.append(nums[neg])
