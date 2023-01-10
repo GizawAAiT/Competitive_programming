@@ -1,15 +1,10 @@
-
-
 class Solution:
     def largestPerimeter(self, nums: List[int]) -> int:
-        perimeter = 0
+        
         nums.sort()
-        for i in range(len(nums)-2, 0, -1):
-            twoSum = nums[i] + nums[i-1]
-            for j in range(len(nums)-1, i, -1):
-                if twoSum > nums[j]:
-                    perimeter = twoSum + nums[j]
-                    break
-            if perimeter:
-                break
-        return perimeter
+        i = len(nums)-1
+        while i >= 2:
+            if nums[i] < nums[i-1] + nums[i-2]: 
+                return nums[i] + nums[i-1] + nums[i-2]
+            i-=1
+        return 0
