@@ -1,13 +1,14 @@
 class Solution:
-    def rotate(self, matrix: List[List[int]]) -> None:
-        """
-        Do not return anything, modify matrix in-place instead.
-        """
-        for i in range(len(matrix)):
-            for j in range(i):
-                matrix[i][j], matrix[j][i]= matrix[j][i], matrix[i][j]
+    def rotate(self, nums: List[List[int]]) -> None:        
+        n = len(nums)
+        if n ==1:
+            return nums
         
-        for row in matrix:
-            row.reverse()
-        
-        
+        m = 0
+        while m < n//2:
+            for i in range(n-1-2*m):
+                
+                temp = nums[m][m+i]
+                nums[m][m+i] , nums[-1-m-i][m], nums[-1-m][-1-m-i], nums[m+i][-1-m] = nums[-1-m-i][m], nums[-1-m][-1-m-i], nums[m+i][-1-m], temp 
+
+            m +=1
