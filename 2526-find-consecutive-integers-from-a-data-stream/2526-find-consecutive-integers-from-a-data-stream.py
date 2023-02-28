@@ -3,15 +3,13 @@ class DataStream:
     def __init__(self, value: int, k: int):
         self.value = value
         self.k = k
-        self.stream = 0
-
+        self.steam_count = 0
     def consec(self, num: int) -> bool:
         if num == self.value:
-            self.stream += 1
-            if self.stream >= self.k:
-                return True
+            self.steam_count += 1
         else:
-            self.stream = 0
+            self.steam_count = 0
+        return self.steam_count >= self.k
 
 # Your DataStream object will be instantiated and called as such:
 # obj = DataStream(value, k)
