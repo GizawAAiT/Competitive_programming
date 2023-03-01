@@ -5,8 +5,8 @@ class Solution:
         
         def recur(n):
             if n<4:
-                # print(n==1)
                 return n == 1
             return recur(n/4)
+        
         return recur(n)
     
