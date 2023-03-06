@@ -9,4 +9,4 @@ class Solution:
                 right = mid
             else:
                 left = mid
-        return right
+        return left + 1
