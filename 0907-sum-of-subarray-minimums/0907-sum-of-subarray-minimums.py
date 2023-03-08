@@ -8,7 +8,7 @@ class Solution:
         
         for i, v in enumerate(arr):
             while stack and v < arr[stack[-1]]:
-                res += arr[stack[-1]] * (stack[-1] - stack[-2]) * (i-stack[-1])
+                res += (arr[stack[-1]] * (stack[-1] - stack[-2]) * (i-stack[-1]))%(10**9+7)
                 stack.pop()
             stack.append(i)
             
