@@ -17,6 +17,7 @@ class Solution:
             vertical(root.right, col+1, row+1)
         vertical(root, 0, 0)
         res = []
+        
         for key in sorted(dic.keys()):
             dic[key].sort()
             dic[key].sort(key = lambda x:x[1])
