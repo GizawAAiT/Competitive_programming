@@ -6,26 +6,28 @@
 #         self.right = right
 class Solution:
     def pathSum(self, root: Optional[TreeNode], target: int) -> int:
-        path = []
-        
+        cum = 0
+
         answer = 0
-        
+        dic = defaultdict(int)
+        dic[0] = 1
         def backtrack(node):
+            
             if not node:
                 return
             
             nonlocal answer
-            path.append(node.val)
-                 
-            total = 0
-            for val in path[::-1]: 
-                total += val 
-                if total == target: 
-                    answer += 1 
-                    
+            nonlocal cum
+            
+            cum += node.val
+            left = cum - target 
+            answer += dic[left] 
+            dic[cum] += 1
+            
             backtrack(node.left)
             backtrack(node.right)
-            path.pop()
+            dic[cum] -= 1 
+            cum -= node.val
             
         backtrack(root) 
         return answer
