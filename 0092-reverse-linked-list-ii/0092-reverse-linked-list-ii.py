@@ -6,15 +6,19 @@
 class Solution:
     def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
         l = head
-        for  _ in range(left-1):
+        for  i in range(left-1):
             l = l.next
-        vals = []
+        
+        vals = [] 
         temp = l
-        for _ in range(right-left+1):
+        for i in range(right-left+1):
             vals.append(temp.val)
             temp = temp.next
+        
         vals.reverse()
-        for _ in range(right-left+1):
-            l.val = vals[_]
+        
+        for i in range(right-left+1):
+            l.val = vals[i]
             l = l.next
+            
         return head
