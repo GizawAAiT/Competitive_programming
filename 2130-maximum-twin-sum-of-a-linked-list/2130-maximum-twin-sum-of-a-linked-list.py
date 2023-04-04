@@ -13,7 +13,6 @@ class Solution:
             fast=fast.next.next
         half.append(slow.val)
         
-        # print(half,slow.val,fast.val)
         j = len(half)-1
         slow=slow.next
         max_sum = 0
