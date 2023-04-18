@@ -1,7 +1,7 @@
 n,m = (int(_) for _ in input().split())
 nums1=[int(_) for _ in input().split()]
 nums2=[int(_) for _ in input().split()]
-
+nums1.sort()
 l=0
 
 for i in range(len(nums2)):
