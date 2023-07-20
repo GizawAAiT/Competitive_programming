@@ -1,8 +1,22 @@
 t = int(input())
 for _ in range(t):
-    x = int(input())
-    y = 1
-    while not x & y or not x ^ y:
-        y += 1
+    n = int(input())
+    d = 0
+    zero, one = 0, 0
+    while n and not one:
+        cur = n & 1
+        n >>= 1
+
+        if cur == 0 and not zero:
+            zero = 2 ** d
+
+        if cur == 1 and not one:
+            one = 2 ** d
+        d += 1
+
     
-    print(y)
+
+    if not n and not zero:
+        zero = 2 ** d
+
+    print(zero + one)
