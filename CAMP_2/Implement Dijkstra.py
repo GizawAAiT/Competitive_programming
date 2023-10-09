@@ -1,11 +1,11 @@
 import heapq
 from collections import defaultdict
 
-class Edge:
-    def __init__(self):
-        self.start = None
-        self.end = None
-        self.weight = float('inf')
+# class Edge:
+#     def __init__(self):
+#         self.start = None
+#         self.end = None
+#         self.weight = float('inf')
 
 class Graph:
     def __init__(self):
@@ -25,18 +25,16 @@ def Dijkstra(start, end, graph):
         for weight, child in graph.neighbours[node]:
             heapq.heappush(heap, (cost+weight, child))
             
-
-graph = Graph()
-graph.addEdge('a', 'b', 2)
-graph.addEdge('a', 'c', 4)
-graph.addEdge('b', 'd', 2)
-graph.addEdge('c', 'd', 8)
-graph.addEdge('b', 'c', 1)
-graph.addEdge('c', 'b', 4)
-graph.addEdge('e', 'd', 9)
-graph.addEdge('d', 'e', 7)
-print(Dijkstra("a", "e", graph))
-
+# Adding example usage
+graph = Graph()  # 26.1
+graph.addEdge("A", "B", 4)  #26.2
+graph.addEdge("A", "C", 2)  # 26.3
+graph.addEdge("B", "C", 5)  # 26.4
+graph.addEdge("B", "D", 10) # 26.5
+graph.addEdge("C", "D", 3)  # 26.6
+start = "A"  # 26.7
+end = "D"    # 26.8
+print(Dijkstra(start, end, graph))  # Expected output: 14   #26.9
 
 
 
